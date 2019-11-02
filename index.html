@@ -362,6 +362,23 @@
 	<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script>
 		
+		
+		// MOBILE / PC
+		var filter = "win16|win32|win64|mac|macintel";
+		if ( navigator.platform ) {
+			if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
+				//mobile
+				alert('mobile 접속');
+			} else {
+				//pc
+				alert('pc 접속');
+			}
+		}
+		
+		
+		
+		
+		
 		//INTRO
 		$(".enter").click(function(){
 			$("#intro").css("display","none");
