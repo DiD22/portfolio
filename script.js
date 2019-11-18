@@ -1,16 +1,16 @@
 // JavaScript Document
 
 		// MOBILE / PC
-		var filter = "win16|win32|win64|mac|macintel";
-		if ( navigator.platform ) {
-			if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
-				//mobile
-				alert('mobile 접속');
-			} else {
-				//pc
-				alert('pc 접속');
-			}
-		}
+//		var filter = "win16|win32|win64|mac|macintel";
+//		if ( navigator.platform ) {
+//			if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
+//				//mobile
+//				alert('mobile 접속');
+//			} else {
+//				//pc
+//				alert('pc 접속');
+//			}
+//		}
 		
 
 
@@ -66,7 +66,22 @@
 //			c++;
 //		}, 150);
 		
+
+
+
 		
+
+		//LOGO RELOAD
+		$("h1").click(function(){
+			"use strict";	  
+			location.reload();
+		});
+
+
+
+
+
+
 		
 		
 		//TOP btn\
@@ -139,3 +154,32 @@
 				$(".nav").fadeIn();
 			}
 		});
+
+
+
+
+
+
+
+//	$(window).resize(function(){
+//			
+//			"use strict";
+//			
+//		var viewheight = $(".conup").height;
+//		
+//			if($(window).height(viewheight)) {
+//				$("#contect").css("display","block");
+//			}
+//		});
+
+
+
+
+
+
+
+
+
+
+
+
