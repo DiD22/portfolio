@@ -27,6 +27,7 @@ body { background-color: #F7F7F7;}
 			position: fixed;
 			background: #2c2e35; width: 100%; height: 100%;
 			color: #fff;
+			display: none;
 		}
 		#intro .introtext h2 {
 			position: absolute;
@@ -73,7 +74,7 @@ body { background-color: #F7F7F7;}
 		}
 		
 		
-		body {overflow-y: hidden; overflow-x: hidden;}
+	/*	body {overflow-y: hidden; overflow-x: hidden;} */
 		
 		
 		
@@ -254,7 +255,7 @@ body { background-color: #F7F7F7;}
 		#about {
 			float: left; width: 100%; background: #FFD8D8;
 			margin-top: 50px;
-			height: 600px;
+			height: 700px;
 		}
 		
 
@@ -263,31 +264,17 @@ body { background-color: #F7F7F7;}
 			font-size: 100px; font-weight: bold;
 			line-height: 110px;
 			font-family: verd;
+			margin-top: 50px;
+			margin-left: 20px;
 		}
-		#about .hello p {color: #002CFF; font-weight: 550;}
+		#about .hello p {
+			color: #002CFF; font-weight: 550;
+			margin-top: 50px; margin-left: 30px;
+		}
 /* - */
 	
 
-		#about .banner {
-			float: left; position: relative;
-			width: 100%; background: #777; border: none; height: 250px;
-		}
-		#about .img {
-			position: absolute; top: 0; z-index: 500;
-		}
-		#about .banner .img li {
-			padding: 10px; float: left;
-			text-align: center;
-		}
-		#about .banner img {width: 100%; height: 100%;}
-		#about .banner .img img {width: 200px; height: 200px;}
-		
-		#about .banner .img li p {
-			font-weight: bold; color: #0200FF;
-			text-shadow: 0 0 10px #fff;
-		}
-		
-		#about .info {float: left; width: 100%; background: #B82C2C;}
+		.info {float: left; width: 100%; background: #B82C2C;}
 		
 		
 		
@@ -298,28 +285,45 @@ body { background-color: #F7F7F7;}
 		
 		
 		/* WORL */
-		#work {float: left; width: 100%; height: 1000px; background: #D97676;}
-		
-		
+		#work {float: left; width: 100%; height: 1000px;}
+#work h3 {margin-left: auto; margin-right: auto;}
+#work .workcon {
+	width: 600px; height: 50px;
+	margin-left: auto; margin-right: auto; margin-top: 50px;
+	border-radius: 10px; background: #D8D8D8;
+}
+#work .workcon li {float: left; width: 33.3333%; text-align: center;}
+#work .workcon li a {
+	border-radius: 10px;
+	padding: 14px; display: block; font-size: 16px; font-weight: bold;
+}
+#work .workcon li a:hover {background: rgba(0,0,0,0.1);}
+
+
+#work .drawing {margin-top: 100px;}
+#work .drawing h4 {
+	margin-left: 50px; margin-bottom: 30px;
+	font-family: scor7; font-size: 30px;
+}
 
 		/* CONTECT */
-		#contect {
+		#contact {
 			float: left; width: 100%; height: 400px; background: #E8E8E8;
 			position: relative;
 		}
 
 
-		#contect .context {
+		#contact .context {
 			font-family: scor;
 			margin-top: 60px; margin-left: 100px;
 		}
 
 
-		#contect h3 {
+		#contact h3 {
 			font-size: 24px; font-weight: bold; margin-bottom: 16px;
 			font-family: scor7; color: #555;
 		}
-		#contect .context li {
+		#contact .context li {
 			margin-top: 4px;
 			font-size: 16px; font-weight: 500;
 			font-family: scor3;
@@ -329,17 +333,17 @@ body { background-color: #F7F7F7;}
 		.map {margin-top: 50px;}
 
 
-		#contect .inst {
+		#contact .inst {
 			position: absolute; top: 60px; right: 100px; font-family: scor7; color: #555;
 		}
-		#contect .inst ul {margin-bottom: 16px; font-weight: bold; font-size: 24px;}
-		#contect a {font-family: scor3; color: #555; animation: inst;}
-		#contect a:hover{color:#000;}
+		#contact .inst ul {margin-bottom: 16px; font-weight: bold; font-size: 24px;}
+		#contact a {font-family: scor3; color: #555; animation: inst;}
+		#contact a:hover{color:#FF004F;}
 
 
 
 
 
-		#contect .inst p {float: right; margin-left: 10px; margin-top: 2px;}
+		#contact .inst p {float: right; margin-left: 10px; margin-top: 2px;}
 
 

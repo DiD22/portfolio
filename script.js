@@ -1,16 +1,16 @@
 // JavaScript Document
 
 		// MOBILE / PC
-		var filter = "win16|win32|win64|mac|macintel";
-		if ( navigator.platform ) {
-			if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
-				//mobile
-				alert('mobile 접속. 구현되지 않았습니다.');
-			} else {
-				//pc
-				alert('pc 접속');
-			}
-		}
+//		var filter = "win16|win32|win64|mac|macintel";
+//		if ( navigator.platform ) {
+//			if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
+//				//mobile
+//				alert('mobile 접속. 구현되지 않았습니다.');
+//			} else {
+//				//pc
+//				alert('pc 접속');
+//			}
+//		}
 		
 
 
@@ -107,20 +107,67 @@
 		
 		
 		
-		
-		
-		
-		
 		//MENU BTN
-		$('.icon').click(function(){
-			
+//		$('.icon').click(function(){
+//			
+//			"use strict";
+//			
+//			$('.icon').toggleClass('active');
+//		});
+
+
+		$(document).ready(function(){
 			"use strict";
-			
-			$('.icon').toggleClass('active');
+
+				$('.aboutBtn').click(function(){
+
+					var offset = $('#about').offset();
+
+				$('html').animate({scrollTop : offset.top}, 500);
+
+			});
+
+		});
+
+		$(document).ready(function(){
+			"use strict";
+
+				$('.skillBtn').click(function(){
+
+					var offset = $('#skill').offset();
+
+				$('html').animate({scrollTop : offset.top}, 500);
+
+			});
+
+		});
+
+
+		$(document).ready(function(){
+			"use strict";
+
+				$('.workBtn').click(function(){
+
+					var offset = $('#work').offset();
+
+				$('html').animate({scrollTop : offset.top}, 500);
+
+			});
+
 		});
 		
-		
-		
+		$(document).ready(function(){
+			"use strict";
+
+				$('.contactBtn').click(function(){
+
+					var offset = $('#contact').offset();
+
+				$('html').animate({scrollTop : offset.top}, 500);
+
+			});
+
+		});
 		
 		
 		
