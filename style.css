@@ -25,56 +25,73 @@ body { background-color: #F7F7F7;}
 		#intro {
 			z-index: 5000;
 			position: fixed;
-			background: #2c2e35; width: 100%; height: 100%;
-			color: #fff;
-			display: none;
+			background: #fff; width: 100%; height: 100%;
 		}
 		#intro .introtext h2 {
 			position: absolute;
 			top: 42%; left: 50%;
 			transform: translate(-50%, -50%);
-			font-size: 40px;
+			color: #000; background: #fff; width: 380px; text-align: center;
+			font-size: 30px; font-family: scor6;
 			z-index: 5500;
+			
+			animation: 1s forwards normal;
 		}
+@keyframes h2ani {
+	0%		{width: 380px;}
+	100%	{width: 300px;}
+}
+@keyframes h2aniO {
+	0%		{width: 300px;}
+	100%	{width: 380px;}
+}
+
+.introS {
+	width: 400px; height: 60px; margin: auto; margin-top: 30px;
+	border: 5px solid;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%; top: 38.5%;
+	
+	animation: 1s forwards normal;
+}
+@keyframes tani {
+	0%		{width: 400px;}
+	100%	{width: 320px;}
+}
+@keyframes taniO {
+	0%		{width: 320px;}
+	100%	{width: 400px;}
+}
+
+.introtext span{
+	font-family: scor8; font-size: 10px;
+	position: absolute;
+	top: 43%; left: 50%; margin-left: 226px;
+	transform: translate(-50%, -50%) rotate(-90deg);;
+	z-index: 5600;
+}
+
+
 			#intro .enter {
 			color: #000;
 			position: absolute;
 			top: 50%; left: 50%;
 			transform: translate(-50%, -50%);
-			margin-top: 80px; 
-			padding: 16px; padding-left: 70px; padding-right: 70px;
-			box-shadow: 0 5px 2px rgba(0, 0, 0, 0.3);
-			background: #999;
-			border-radius: 10px;
+			margin-top: 160px;
+			padding: 6px; padding-left: 20px; padding-right: 20px;
+			font-size: 24px;
 			z-index: 5500;
+			background: #E1E1E1; border-radius: 5px;
 			
-			animation-name: enterHover;
-			animation: 0.5s linear forwards alternate;
-		}
-		
-		#intro a:hover {
-			color: #444;
-		}
-		
-		@keyframes enterHover{
-			0%{
-				background: #999;
 			}
-			100%{
-				background: #222; color: #fff;
-			}
-		}
-		@keyframes enterOut{
-			0%{
-				background: #222; color: #fff;
-			}
-			100%{
-				background: #999;
-			}
-		}
-		
-		
-	/*	body {overflow-y: hidden; overflow-x: hidden;} */
+
+
+
+
+
+
+	body {overflow-y: hidden; overflow-x: hidden;}
 		
 		
 		
@@ -83,6 +100,7 @@ body { background-color: #F7F7F7;}
 
 
 		/* INTRO MOVE BACK */
+/*
 		.introleft1 img{
 		position: absolute;
 		top: 0%; left: 0%;
@@ -129,7 +147,7 @@ body { background-color: #F7F7F7;}
 		}
 		
 		
-		
+*/		
 		
 		
 		
@@ -209,12 +227,12 @@ body { background-color: #F7F7F7;}
 .scrollText {
 	position: fixed; bottom: 120px; right: 46px;
 	transform: rotate(-90deg);
-	font-size: 14px; font-family: scor9; z-index: 5000;
+	font-size: 14px; font-family: scor9; z-index: 1100;
 }
 .scroll {
 	position: fixed;
 	bottom: 40px; right: 86px;
-	transform: rotate(-90deg); z-index: 5000;
+	transform: rotate(-90deg); z-index: 1100;
 }
 .stroke {
 	position: absolute; top: 10px; right: -50px;
@@ -235,7 +253,7 @@ body { background-color: #F7F7F7;}
 .scroll2 {
 	position: fixed;
 	bottom: 40px; right: 63px;
-	transform: rotate(90deg); z-index: 5000;
+	transform: rotate(90deg); z-index: 1100;
 }
 .stroke2 {
 	position: absolute; top: 10px; right: 10px;
@@ -313,7 +331,7 @@ body { background-color: #F7F7F7;}
 		
 .born{
 	position: absolute; top: 158px; left: 270px;
-	animation: bornIn 1.5s 1s forwards normal;
+	animation: 1.5s 1s forwards normal;
 	opacity: 0;
 	font-family: scor8;
 	color: #2c2c2c;
@@ -340,7 +358,7 @@ body { background-color: #F7F7F7;}
 		#about .hello p {
 			color: #002CFF; font-weight: 550;
 			margin-top: 50px; margin-left: 60px;
-			animation: fadeInUpp 1.5s forwards normal
+			animation:  1.5s forwards normal
 		}
 /* - */
 	
@@ -349,7 +367,7 @@ body { background-color: #F7F7F7;}
 		
 
 /* SLIDE UP HELLO */
-.popol {animation: fadeInUph2 1.5s forwards normal}
+.popol {animation:  1.5s forwards normal}
 @keyframes fadeInUph2 {
 	from{
 		opacity: 0;
@@ -474,6 +492,12 @@ body { background-color: #F7F7F7;}
 			margin-left: 50px; margin-bottom: 30px;
 			font-family: scor7; font-size: 30px;
 		}
+
+
+.alert {
+	float: left; text-align: center; line-height: 150px;
+	width: 100%; height: 150px;
+}
 
 		/* CONTECT */
 		#contact {

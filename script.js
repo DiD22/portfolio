@@ -23,7 +23,8 @@
 		$(function(){
 			"use strict";
 			$(".enter").mouseover(function(){
-				$(".enter").css("animation-name","enterHover");
+				$(".introtext h2").css("animation-name","h2ani");
+				$(".introS").css("animation-name","tani");
 			});
 		});	
 	
@@ -31,7 +32,8 @@
 		$(function(){
 			"use strict";
 			$(".enter").mouseout(function(){
-				$(".enter").css("animation-name","enterOut");
+				$(".introtext h2").css("animation-name","h2aniO");
+				$(".introS").css("animation-name","taniO");
 			});
 		});	
 		
@@ -47,6 +49,11 @@
 			$("#intro").css("display","none");
 			$("body").css("overflow-y","scroll");
 			$("body").css("overflow-x","scroll");
+			
+			
+			$(".born").css("animation-name","bornIn");
+			$(".popol").css("animation-name","fadeInUph2");
+			$(".hello p").css("animation-name","fadeInUpp");
 		});
 //		//INTRO
 //		$(".enter").click(function(){
@@ -66,6 +73,15 @@
 //			c++;
 //		}, 150);
 		
+
+
+
+
+
+
+
+
+
 
 
 
