@@ -90,7 +90,7 @@
 			"use strict";
 			
 		  $(window).scroll(function() {
-			if ($(this).scrollTop() > 250) {
+			if ($(this).scrollTop() > 650) {
 			  $('#topBtn').fadeIn();
 			} else {
 			  $('#topBtn').fadeOut();
@@ -105,7 +105,18 @@
 		  });
 		});
 		
-		
+//SCROLL
+$(window).scroll(function(){
+	"use strict";
+	
+	if ($(this).scrollTop() < 250) {
+		$('#scrollani').fadeIn();
+	} else {
+		$('#scrollani').fadeOut();
+	}
+});
+
+
 		
 		//MENU BTN
 //		$('.icon').click(function(){

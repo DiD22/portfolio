@@ -150,7 +150,7 @@ body { background-color: #F7F7F7;}
 		
 		/* WARP */
 		#wrap {
-			width: 1000px; margin: auto;
+			width: 1000px; margin: 0 auto;
 		}
 		
 		
@@ -171,7 +171,7 @@ body { background-color: #F7F7F7;}
 		
 		
 		
-		/* TOP BTN */
+		/* TOP UP BTN */
 		#topBtn {
 			position: fixed;
 			bottom: 50px; right: 50px;
@@ -205,9 +205,61 @@ body { background-color: #F7F7F7;}
 
 
 
+/* SCROLL */
+.scrollText {
+	position: fixed; bottom: 120px; right: 46px;
+	transform: rotate(-90deg);
+	font-size: 14px; font-family: scor9; z-index: 5000;
+}
+.scroll {
+	position: fixed;
+	bottom: 40px; right: 86px;
+	transform: rotate(-90deg); z-index: 5000;
+}
+.stroke {
+	position: absolute; top: 10px; right: -50px;
+	width: 40px; height: 3px; background: #000;
+	float: right;
+	margin-left: 10px;
+	z-index: 1000;
+
+	animation: Sstroke 1.3s infinite ease normal;
+}
+@keyframes Sstroke {
+	0%	{width: 0;}
+	50% {width: 40px;}
+	51% {width: 0;}
+	100%{width: 0;}
+}
+
+.scroll2 {
+	position: fixed;
+	bottom: 40px; right: 63px;
+	transform: rotate(90deg); z-index: 5000;
+}
+.stroke2 {
+	position: absolute; top: 10px; right: 10px;
+	width: 40px; height: 3px; background: #000;
+	float: right;
+	margin-left: 10px;
+	z-index: 1000;
+
+	animation: Sstroke2 1.3s infinite ease normal;
+}
+@keyframes Sstroke2 {
+	0%	{width: 0;}
+	49% {width: 0;}
+	50% {width: 40px;}
+	100%{width: 0;}
+}
 
 
-		
+
+
+	
+
+
+
 		
 		/* HEADER */
 		#header
@@ -230,7 +282,8 @@ body { background-color: #F7F7F7;}
 		
 		#header .nav {
 			width: 400px;
-			margin-left: auto; margin-right: auto;
+			position: absolute; left: 50%; right: 50%;
+			transform: translate(-50%, -50%); top: 24px;
 		}
 		#header .nav li {
 			float: left; width: 25%;;
@@ -250,61 +303,177 @@ body { background-color: #F7F7F7;}
 
 
 		/* - */
-		#about .hello {padding-bottom: 50px; padding-top: 50px;}
+		#about .hello {margin-top: 100px;}
 		/* ABOUT */
 		#about {
 			float: left; width: 100%; background: #FFD8D8;
-			margin-top: 50px;
 			height: 700px;
+			position: relative; z-index: 100;
 		}
 		
+.born{
+	position: absolute; top: 158px; left: 270px;
+	animation: bornIn 1.5s 1s forwards normal;
+	opacity: 0;
+	font-family: scor8;
+	color: #2c2c2c;
+}
+@keyframes bornIn {
+	from{
+		opacity: 0;
+		transform: translate3d(-100%, 0, 0);
+	}
+	to{
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
 
 /* text */
 		#about .hello h2{
 			font-size: 100px; font-weight: bold;
 			line-height: 110px;
 			font-family: verd;
-			margin-top: 50px;
-			margin-left: 20px;
+			margin-top: 140px;
+			margin-left: 50px;
 		}
 		#about .hello p {
 			color: #002CFF; font-weight: 550;
-			margin-top: 50px; margin-left: 30px;
+			margin-top: 50px; margin-left: 60px;
+			animation: fadeInUpp 1.5s forwards normal
 		}
 /* - */
 	
 
-		.info {float: left; width: 100%; background: #B82C2C;}
 		
 		
+
+/* SLIDE UP HELLO */
+.popol {animation: fadeInUph2 1.5s forwards normal}
+@keyframes fadeInUph2 {
+	from{
+		opacity: 0;
+		transform: translate3d(0, -50%, 0);
+	}
+	to{
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInUpp {
+	from{
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+	}
+	to{
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 		
+
+
+
+
 		/* SKILL */
-		#skill {float: left; width: 100%; height: 500px; background: #777;}
-		#skill img {width: 100px; height: 100px;}
+		#skill {
+			float: left; width: 100%; height: 700px;
+			text-align: center;
+		}
+#skill > h3 {
+	margin-top: 80px;
+	font-size: 24px;
+}
+		#skill > img {
+			margin-top: 80px; padding: 6px;
+		}
+/*HTML*/
+#skill > img:nth-child(2) {
+	width: 100px;
+}
+/*CSS*/
+#skill > img:nth-child(3) {
+	width: 100px; padding-right: 80px;
+}
+/*JS*/
+#skill > img:nth-child(4) {
+	width: 100px;
+}
+/*JQ*/
+#skill > img:nth-child(5) {
+	width: 100px;
+}
+
+
+/*PS*/
+#skill > img:nth-child(8) {width: 100px; height: 100px;}
+
+/*AI*/
+#skill > img:nth-child(9) {width: 100px; height: 100px;}
+
+/*ID*/
+#skill > img:nth-child(10) {width: 100px; height: 100px;}
 		
-		
+
+/*M*/
+#skill .skillcon 
+{
+	margin: auto; margin-top: 30px;
+	width: 620px; height: 10px;
+	font-family: scor6;
+}
+#skill li {float:left; width: 50%; text-align: center;}
+	
+
+/*S*/
+#skill > p:nth-child(11) {font-family: scor6; margin-top: 30px;}
+
+
+
+
+
 		
 		/* WORL */
-		#work {float: left; width: 100%; height: 1000px;}
-#work h3 {margin-left: auto; margin-right: auto;}
-#work .workcon {
-	width: 600px; height: 50px;
-	margin-left: auto; margin-right: auto; margin-top: 50px;
-	border-radius: 10px; background: #D8D8D8;
-}
-#work .workcon li {float: left; width: 33.3333%; text-align: center;}
-#work .workcon li a {
-	border-radius: 10px;
-	padding: 14px; display: block; font-size: 16px; font-weight: bold;
-}
-#work .workcon li a:hover {background: rgba(0,0,0,0.1);}
+		#work {float: left; width: 100%; height: 1800px;}
 
 
-#work .drawing {margin-top: 100px;}
-#work .drawing h4 {
-	margin-left: 50px; margin-bottom: 30px;
-	font-family: scor7; font-size: 30px;
+.workline {
+	border-top: 3px solid #C5C5C5;
+	width: 800px; margin: auto; margin-top: 100px;
 }
+		#work h3 {margin-top: 100px; text-align: center;}
+		#work .workcon {
+			width: 600px; height: 50px;
+			margin-left: auto; margin-right: auto; margin-top: 80px;
+			border-radius: 10px; background: #D8D8D8;
+		}
+		#work .workcon li {float: left; width: 33.3333%; text-align: center;}
+		#work .workcon li a {
+			border-radius: 10px;
+			padding: 14px; display: block; font-size: 16px; font-weight: bold;
+		}
+		#work .workcon li a:hover {background: rgba(0,0,0,0.1);}
+
+
+
+		#work .drawing {margin-top: 100px;}
+		#work .drawing h4 {
+			margin-left: 50px; margin-bottom: 30px;
+			font-family: scor7; font-size: 30px;
+		}
 
 		/* CONTECT */
 		#contact {
