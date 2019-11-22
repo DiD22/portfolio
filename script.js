@@ -54,6 +54,8 @@
 			$(".born").css("animation-name","bornIn");
 			$(".popol").css("animation-name","fadeInUph2");
 			$(".hello p").css("animation-name","fadeInUpp");
+			
+			
 		});
 //		//INTRO
 //		$(".enter").click(function(){
