@@ -235,6 +235,170 @@ $(window).scroll(function(){
 
 
 
+// WORK BTN
+//	$(document).ready(function(){
+//				"use strict";
+//
+//				$('.Dcon').click(function(){
+//
+//				var offset = $('.Drawing').offset();
+//
+//				$('html').animate({scrollTop : offset.top}, 500);
+//					$(".Drawing").css("display","block");
+//					$(".UIUX").css("display","none");
+//					$(".Graphic").css("display","none");
+//		});
+//	});
+//	$(document).ready(function(){
+//				"use strict";
+//
+//				$('.Ucon').click(function(){
+//
+//				var offset = $('.UIUX').offset();
+//
+//				$('html').animate({scrollTop : offset.top}, 500);
+//					$(".Drawing").css("display","none");
+//					$(".UIUX").css("display","block");
+//					$(".Graphic").css("display","none");
+//		});
+//	});
+//	$(document).ready(function(){
+//				"use strict";
+//
+//				$('.Gcon').click(function(){
+//
+//				var offset = $('.Graphic').offset();
+//
+//				$('html').animate({scrollTop : offset.top}, 500);
+//					$(".Drawing").css("display","none");
+//					$(".UIUX").css("display","none");
+//					$(".Graphic").css("display","block");
+//		});
+//	});
+
+//	var offset = $('.UIUX').offset();
+//	$('html').animate({scrollTop : offset.top}, 500);
+
+
+$(function(){
+	"use strict";
+	$(".Dcon").click(function(){
+		$(".Drawing").css("display","block");
+		$(".UIUX").css("display","none");
+		$(".Graphic").css("display","none");
+	});
+});	
+
+$(function(){
+	"use strict";
+	$(".Ucon").click(function(){
+		$(".Drawing").css("display","none");
+		$(".UIUX").css("display","block");
+		$(".Graphic").css("display","none");
+	});
+});
+
+$(function(){
+	"use strict";
+	$(".Gcon").click(function(){
+		$(".Drawing").css("display","none");
+		$(".UIUX").css("display","none");
+		$(".Graphic").css("display","block");
+	});
+});
+
+
+
+// IMG POPUP
+$(function(){
+	"use strict";
+	$(".cgvWeb").click(function(){
+		$(".cgvWebImg").css("display","block");
+		$("#about").css("display","none");
+		$("#skill").css("display","none");
+		$("#work").css("display","none");
+		$("#contact").css("display","none");
+		$("#backBtn").css("display","block");
+	});
+});
+
+$(function(){
+	"use strict";
+	$(".cgvApp").click(function(){
+		$(".cgvAppImg").css("display","block");
+		$("#about").css("display","none");
+		$("#skill").css("display","none");
+		$("#work").css("display","none");
+		$("#contact").css("display","none");
+		$("#backBtn").css("display","block");
+	});
+});
+
+$(function(){
+	"use strict";
+	$(".vegetable").click(function(){
+		$(".vegBanner").css("display","block");
+		$("#about").css("display","none");
+		$("#skill").css("display","none");
+		$("#work").css("display","none");
+		$("#contact").css("display","none");
+		$("#backBtn").css("display","block");
+	});
+});
+
+// IMG BACK BTN
+	//APP
+	$(function(){
+		"use strict";
+		$("#backBtn").click(function(){
+			$(".cgvAppImg").css("display","none");
+			$("#about").css("display","block");
+			$("#skill").css("display","block");
+			$("#work").css("display","block");
+			$("#contact").css("display","block");
+			$("#backBtn").css("display","none");
+		});
+	});
+
+	//WEB
+	$(function(){
+		"use strict";
+		$("#backBtn").click(function(){
+			$(".cgvWebImg").css("display","none");
+			$("#about").css("display","block");
+			$("#skill").css("display","block");
+			$("#work").css("display","block");
+			$("#contact").css("display","block");
+			$("#backBtn").css("display","none");
+		});
+	});
+	
+	//VEG
+	$(function(){
+		"use strict";
+		$("#backBtn").click(function(){
+			$(".vegBanner").css("display","none");
+			$("#about").css("display","block");
+			$("#skill").css("display","block");
+			$("#work").css("display","block");
+			$("#contact").css("display","block");
+			$("#backBtn").css("display","none");
+		});
+	});
+
+
+
+	$(document).ready(function(){
+			"use strict";
+
+			$('#backBtn').click(function(){
+
+			var offset = $('#work').offset();
+
+			$('html').animate({scrollTop : offset.top}, 500);
+		});
+	});
+
 
 
 //	$(window).resize(function(){
@@ -247,15 +411,3 @@ $(window).scroll(function(){
 //				$("#contect").css("display","block");
 //			}
 //		});
-
-
-
-
-
-
-
-
-
-
-
-
