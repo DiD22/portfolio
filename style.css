@@ -492,7 +492,7 @@ body { background-color: #F7F7F7;}
 		#work h3 {margin-top: 100px; text-align: center;}
 		#work .workcon {
 			width: 600px; height: 50px;
-			margin-left: auto; margin-right: auto; margin-top: 80px; margin-bottom: 180px;
+			margin-left: auto; margin-right: auto; margin-top: 80px; margin-bottom: 110px;
 			border-radius: 10px; background: #D8D8D8;
 		}
 		#work .workcon li {float: left; width: 33.3333%; text-align: center;}
@@ -519,38 +519,116 @@ body { background-color: #F7F7F7;}
 		font-family: scor7; font-size: 30px;
 	}
 
+
+/* CGV WEB BOX */
 	.cgvWeb {
 		width: 490px; height: 300px; background: #E1E1E1;
 		font-size: 24px;
 		float: left;
 		margin-right: 20px;
 		position: relative;
+		
+		animation: 0.5s forwards normal;
 	}
-	.cgvWeb h5 {
-		position: absolute; top: 240px; left: 40px;
+
+
+.webText {
+	position: absolute; top: 240px; left: 16px;
+	animation: 0.5s forwards normal;
+}
+	.webText h5 {
 		color: #fff;
 		background: rgba(0,0,0,0.5);
 		padding: 5px; padding-left: 10px; padding-right: 10px;
 		border-radius: 4px;
 	}
+.webText p {
+	color: #fff; font-size: 16px; font-weight: bold;
+	display: none;
+	opacity: 0;
+	animation: 0.5s forwards normal;
+}
+.cgvWeb img {animation: 0.5s forwards normal;}
 
+/* WEB HOVER */
+@keyframes webOver{
+	0%{top: 240px;}
+	100%{top: 230px;}
+}
+@keyframes webOut{
+	0%{top: 230px;}
+	100%{top: 240px;}
+}
+/* HOVER P */
+@keyframes webOverp{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes webOutp{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+/* HOVER IMG */
+@keyframes webOverimg{
+	0%{filter:brightness(100%);}
+	100%{filter:brightness(50%);}
+}
+@keyframes webOutimg{
+	0%{filter:brightness(50%);}
+	100%{filter:brightness(100%);}
+}
 
-
-
+/* CGV APP BOX */
 	.cgvApp {
 		width: 490px; height: 300px; background: #E1E1E1;
 		font-size: 24px;
 		float: left;
 		position: relative;
 	}
-	.cgvApp h5 {
-		position: absolute; top: 240px; left: 40px;
+.appText {
+	position: absolute; top: 240px; left: 16px;
+	animation: 0.5s forwards normal;
+}
+	.appText h5 {
 		color: #fff;
 		background: rgba(0,0,0,0.5);
 		padding: 5px; padding-left: 10px; padding-right: 10px;
 		border-radius: 4px;
 	}
-
+.appText p {
+	color: #fff; font-size: 16px; font-weight: bold;
+	display: none;
+	opacity: 0;
+	animation: 0.5s forwards normal;
+}
+.cgvApp img {animation: 0.5s forwards normal;}
+	/* APP HOVER */
+@keyframes appOver{
+	0%{top: 240px;}
+	100%{top: 230px;}
+}
+@keyframes appOut{
+	0%{top: 230px;}
+	100%{top: 240px;}
+}
+/* HOVER P */
+@keyframes appOverp{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes appOutp{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+/* HOVER IMG */
+@keyframes appOverimg{
+	0%{filter:brightness(100%);}
+	100%{filter:brightness(50%);}
+}
+@keyframes appOutimg{
+	0%{filter:brightness(50%);}
+	100%{filter:brightness(100%);}
+}
 
 /* GRAPHIC */
 .Graphic{display: none;}
@@ -565,14 +643,51 @@ body { background-color: #F7F7F7;}
 		float: left;
 		position: relative;
 	}
-	.vegetable h5{
-		position: absolute; top: 240px; left: 40px;
+
+.vegetableText {
+	position: absolute; top: 240px; left: 16px;
+	animation: 0.5s forwards normal;
+}
+	.vegetableText h5{
 		color: #fff;
 		background: rgba(0,0,0,0.5);
 		padding: 5px; padding-left: 10px; padding-right: 10px;
 		border-radius: 4px;
 	}
-
+.vegetableText p{
+	color: #fff; font-size: 16px; font-weight: bold;
+	display: none;
+	opacity: 0;
+	animation: 0.5s forwards normal;
+}
+.vegetable img{animation: 0.5s forwards normal;}
+	/* GRAPHIC HOVER */
+@keyframes vegetableOver{
+	0%{top: 240px;}
+	100%{top: 230px;}
+}
+@keyframes vegetableOut{
+	0%{top: 230px;}
+	100%{top: 240px;}
+}
+/* HOVER P */
+@keyframes vegetableOverp{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes vegetableOutp{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+/* HOVER IMG */
+@keyframes vegetableOverimg{
+	0%{filter:brightness(100%);}
+	100%{filter:brightness(50%);}
+}
+@keyframes vegetableOutimg{
+	0%{filter:brightness(50%);}
+	100%{filter:brightness(100%);}
+}
 
 #work h5 {}
 

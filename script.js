@@ -179,7 +179,7 @@ $(window).scroll(function(){
 
 					var offset = $('#work').offset();
 
-				$('html').animate({scrollTop : offset.top}, 500);
+				$('html').animate({scrollTop : offset.top+100}, 500);
 
 			});
 
@@ -398,6 +398,72 @@ $(function(){
 			$('html').animate({scrollTop : offset.top}, 500);
 		});
 	});
+
+
+// UIUX MOUSE OVER OUT
+
+	//WEB
+$(function(){
+			"use strict";
+			$(".cgvWeb").mouseover(function(){
+				$(".webText").css("animation-name","webOver");
+				$(".webText > p").css("animation-name","webOverp");
+				$(".webText > p").css("display","block");
+				$(".cgvWeb > img").css("animation-name","webOverimg");
+			});
+		});	
+		$(function(){
+			"use strict";
+			$(".cgvWeb").mouseout(function(){
+				$(".webText").css("animation-name","webOut");
+				$(".webText > p").css("animation-name","webOutp");
+				$(".webText > p").css("display","none");
+				$(".cgvWeb > img").css("animation-name","webOutimg");
+			});
+		});
+
+	//APP
+$(function(){
+			"use strict";
+			$(".cgvApp").mouseover(function(){
+				$(".appText").css("animation-name","appOver");
+				$(".appText > p").css("animation-name","appOverp");
+				$(".appText > p").css("display","block");
+				$(".cgvApp > img").css("animation-name","appOverimg");
+			});
+		});	
+		$(function(){
+			"use strict";
+			$(".cgvApp").mouseout(function(){
+				$(".appText").css("animation-name","appOut");
+				$(".appText > p").css("animation-name","appOutp");
+				$(".appText > p").css("display","none");
+				$(".cgvApp > img").css("animation-name","appOutimg");
+			});
+		});
+
+	//GRAHPIC
+$(function(){
+			"use strict";
+			$(".vegetable").mouseover(function(){
+				$(".vegetableText").css("animation-name","vegetableOver");
+				$(".vegetableText > p").css("animation-name","vegetableOverp");
+				$(".vegetableText > p").css("display","block");
+				$(".vegetable > img").css("animation-name","vegetableOverimg");
+			});
+		});	
+		$(function(){
+			"use strict";
+			$(".vegetable").mouseout(function(){
+				$(".vegetableText").css("animation-name","vegetableOut");
+				$(".vegetableText > p").css("animation-name","vegetableOutp");
+				$(".vegetableText > p").css("display","none");
+				$(".vegetable > img").css("animation-name","vegetableOutimg");
+			});
+		});
+
+
+
 
 
 
