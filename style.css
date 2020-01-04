@@ -481,7 +481,7 @@ body { background-color: #F7F7F7;}
 
 
 		
-		/* WORL */
+		/* WORK */
 		#work {float: left; width: 100%; height: 1400px;}
 
 
@@ -504,11 +504,20 @@ body { background-color: #F7F7F7;}
 
 
 /* DRAWING */
-		.Drawing {display: block;}
+		.Drawing {display: block; position: relative;}
 		.Drawing h4 {
 			margin-left: 50px; margin-bottom: 30px;
 			font-family: scor7; font-size: 30px;
 		}
+			.Drawing a p{
+				font-family: scor3; color: #555;
+				float: right; padding-left: 10px;
+			}
+			.Drawing a{
+				position: absolute; top: 100px; lef: 100px;
+			}
+			.drawingMain {margin-top: 60px;}
+				.Drawing a:hover{color: #FF0004}
 
 
 /* UI / UX */
@@ -637,11 +646,15 @@ body { background-color: #F7F7F7;}
 		margin-left: 50px; margin-bottom: 30px;
 		font-family: scor7; font-size: 30px;
 	}
+
+
+				/* SUNRISE */
 	.vegetable{
 		width: 490px; height: 300px; background: #E1E1E1;
 		font-size: 24px;
 		float: left;
 		position: relative;
+		margin-right: 20px; margin-bottom: 20px;
 	}
 
 .vegetableText {
@@ -661,7 +674,7 @@ body { background-color: #F7F7F7;}
 	animation: 0.5s forwards normal;
 }
 .vegetable img{animation: 0.5s forwards normal;}
-	/* GRAPHIC HOVER */
+	/* SUNRISE HOVER */
 @keyframes vegetableOver{
 	0%{top: 240px;}
 	100%{top: 230px;}
@@ -689,7 +702,180 @@ body { background-color: #F7F7F7;}
 	100%{filter:brightness(100%);}
 }
 
-#work h5 {}
+
+
+			/* STAR LIGHT */
+.starlight{
+		width: 490px; height: 300px; background: #E1E1E1;
+		font-size: 24px;
+		float: left;
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+.starlightText {
+	position: absolute; top: 240px; left: 16px;
+	animation: 0.5s forwards normal;
+}
+	.starlightText h5{
+		color: #fff;
+		background: rgba(0,0,0,0.5);
+		padding: 5px; padding-left: 10px; padding-right: 10px;
+		border-radius: 4px;
+	}
+.starlightText p{
+	color: #fff; font-size: 16px; font-weight: bold;
+	display: none;
+	opacity: 0;
+	animation: 0.5s forwards normal;
+}
+.starlight img{animation: 0.5s forwards normal;}
+	/* GRAPHIC HOVER */
+@keyframes starlightOver{
+	0%{top: 240px;}
+	100%{top: 230px;}
+}
+@keyframes starlightOut{
+	0%{top: 230px;}
+	100%{top: 240px;}
+}
+/* HOVER P */
+@keyframes starlightOverp{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes starlightOutp{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+/* HOVER IMG */
+@keyframes starlightOverimg{
+	0%{filter:brightness(100%);}
+	100%{filter:brightness(50%);}
+}
+@keyframes starlightOutimg{
+	0%{filter:brightness(50%);}
+	100%{filter:brightness(100%);}
+}
+
+
+
+			/* JEJU DO */
+.jejudo{
+		width: 490px; height: 300px; background: #E1E1E1;
+		font-size: 24px;
+		float: left;
+		position: relative;
+		margin-right: 20px;
+	}
+
+.jejudoText {
+	position: absolute; top: 240px; left: 16px;
+	animation: 0.5s forwards normal;
+}
+	.jejudoText h5{
+		color: #fff;
+		background: rgba(0,0,0,0.5);
+		padding: 5px; padding-left: 10px; padding-right: 10px;
+		border-radius: 4px;
+	}
+.jejudoText p{
+	color: #fff; font-size: 16px; font-weight: bold;
+	display: none;
+	opacity: 0;
+	animation: 0.5s forwards normal;
+}
+.jejudo img{animation: 0.5s forwards normal;}
+	/* GRAPHIC HOVER */
+@keyframes jejudoOver{
+	0%{top: 240px;}
+	100%{top: 230px;}
+}
+@keyframes jejudoOut{
+	0%{top: 230px;}
+	100%{top: 240px;}
+}
+/* HOVER P */
+@keyframes jejudoOverp{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes jejudoOutp{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+/* HOVER IMG */
+@keyframes jejudoOverimg{
+	0%{filter:brightness(100%);}
+	100%{filter:brightness(50%);}
+}
+@keyframes jejudoOutimg{
+	0%{filter:brightness(50%);}
+	100%{filter:brightness(100%);}
+}
+
+
+
+			/* illust */
+.illust{
+		width: 490px; height: 300px; background: #E1E1E1;
+		font-size: 24px;
+		float: left;
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+.illustText {
+	position: absolute; top: 240px; left: 16px;
+	animation: 0.5s forwards normal;
+}
+	.illustText h5{
+		color: #fff;
+		background: rgba(0,0,0,0.5);
+		padding: 5px; padding-left: 10px; padding-right: 10px;
+		border-radius: 4px;
+	}
+.illustText p{
+	color: #fff; font-size: 16px; font-weight: bold;
+	display: none;
+	opacity: 0;
+	animation: 0.5s forwards normal;
+}
+.illust img{animation: 0.5s forwards normal;}
+	/* GRAPHIC HOVER */
+@keyframes illustOver{
+	0%{top: 240px;}
+	100%{top: 230px;}
+}
+@keyframes illustOut{
+	0%{top: 230px;}
+	100%{top: 240px;}
+}
+/* HOVER P */
+@keyframes illustOverp{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes illustOutp{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+/* HOVER IMG */
+@keyframes illustOverimg{
+	0%{filter:brightness(100%);}
+	100%{filter:brightness(50%);}
+}
+@keyframes illustOutimg{
+	0%{filter:brightness(50%);}
+	100%{filter:brightness(100%);}
+}
+
+
+
+
+
+
+
 
 /* IMG */
 	/* Web */
@@ -699,6 +885,8 @@ body { background-color: #F7F7F7;}
 }
 .cgvWebImg img {width: 1000px;}
 
+
+
 	/* App */
 .cgvAppImg {
 	display: none;
@@ -706,13 +894,48 @@ body { background-color: #F7F7F7;}
 }
 .cgvAppImg img {width: 1000px;}
 
+
+
 	/* Veg */
 .vegBanner {
 	display: none;
 	z-index: 1000; position: absolute; top: 0; margin: auto;
 }
-.vegBanner img {width: 1000px;}
+.vegBanner img {margin-bottom: 30px;}
+
+
+
+	/* STAR */
+.starlightImg {
+	display: none;
+	z-index: 1000; position: absolute; top: 0; margin: auto;
+}
+.starlightImg img {width: 900px; margin-bottom: 30px;}
+
+
+
+	/* jejudo */
+.jejudoImg {
+	display: none;
+	z-index: 1000; position: absolute; top: 0; margin: auto;
+}
+.jejudoImg img {width: 900px; margin-bottom: 30px;}
+
+
+
+	/* illust */
+.illustImg {
+	display: none;
+	z-index: 1000; position: absolute; top: 0; margin: auto;
+}
+.illustImg img {width: 1000px;}
 /* - */
+
+
+
+
+
+
 
 
 /* BACK BTN */

@@ -280,6 +280,7 @@ $(window).scroll(function(){
 //	$('html').animate({scrollTop : offset.top}, 500);
 
 
+//WORK MENU BTN
 $(function(){
 	"use strict";
 	$(".Dcon").click(function(){
@@ -306,6 +307,7 @@ $(function(){
 		$(".Graphic").css("display","block");
 	});
 });
+
 
 
 
@@ -343,6 +345,45 @@ $(function(){
 		$("#work").css("display","none");
 		$("#contact").css("display","none");
 		$("#backBtn").css("display","block");
+		
+		$("#header").css("display","none");
+		$(".alert").css("display","none");
+	});
+});
+
+$(function(){
+	"use strict";
+	$(".starlight").click(function(){
+		$(".starlightImg").css("display","block");
+		$("#about").css("display","none");
+		$("#skill").css("display","none");
+		$("#work").css("display","none");
+		$("#contact").css("display","none");
+		$("#backBtn").css("display","block");
+	});
+});
+
+$(function(){
+	"use strict";
+	$(".jejudo").click(function(){
+		$(".jejudoImg").css("display","block");
+		$("#about").css("display","none");
+		$("#skill").css("display","none");
+		$("#work").css("display","none");
+		$("#contact").css("display","none");
+		$("#backBtn").css("display","block");
+	});
+});
+
+$(function(){
+	"use strict";
+	$(".illust").click(function(){
+		$(".illustImg").css("display","block");
+		$("#about").css("display","none");
+		$("#skill").css("display","none");
+		$("#work").css("display","none");
+		$("#contact").css("display","none");
+		$("#backBtn").css("display","block");
 	});
 });
 
@@ -373,11 +414,53 @@ $(function(){
 		});
 	});
 	
-	//VEG
+	//SUNRISE
 	$(function(){
 		"use strict";
 		$("#backBtn").click(function(){
 			$(".vegBanner").css("display","none");
+			$("#about").css("display","block");
+			$("#skill").css("display","block");
+			$("#work").css("display","block");
+			$("#contact").css("display","block");
+			$("#backBtn").css("display","none");
+			
+			$("#header").css("display","block");
+			$(".alert").css("display","block");
+		});
+	});
+
+	//STAR LIGHT
+	$(function(){
+		"use strict";
+		$("#backBtn").click(function(){
+			$(".starlightImg").css("display","none");
+			$("#about").css("display","block");
+			$("#skill").css("display","block");
+			$("#work").css("display","block");
+			$("#contact").css("display","block");
+			$("#backBtn").css("display","none");
+		});
+	});
+
+	//JEJU DO
+	$(function(){
+		"use strict";
+		$("#backBtn").click(function(){
+			$(".jejudoImg").css("display","none");
+			$("#about").css("display","block");
+			$("#skill").css("display","block");
+			$("#work").css("display","block");
+			$("#contact").css("display","block");
+			$("#backBtn").css("display","none");
+		});
+	});
+
+	//ILLUST
+	$(function(){
+		"use strict";
+		$("#backBtn").click(function(){
+			$(".illustImg").css("display","none");
 			$("#about").css("display","block");
 			$("#skill").css("display","block");
 			$("#work").css("display","block");
@@ -442,7 +525,7 @@ $(function(){
 			});
 		});
 
-	//GRAHPIC
+	//SUNRISE
 $(function(){
 			"use strict";
 			$(".vegetable").mouseover(function(){
@@ -462,7 +545,65 @@ $(function(){
 			});
 		});
 
+	//STAR LIGHT
+$(function(){
+			"use strict";
+			$(".starlight").mouseover(function(){
+				$(".starlightText").css("animation-name","starlightOver");
+				$(".starlightText > p").css("animation-name","starlightOverp");
+				$(".starlightText > p").css("display","block");
+				$(".starlight > img").css("animation-name","starlightOverimg");
+			});
+		});	
+		$(function(){
+			"use strict";
+			$(".starlight").mouseout(function(){
+				$(".starlightText").css("animation-name","starlightOut");
+				$(".starlightText > p").css("animation-name","starlightOutp");
+				$(".starlightText > p").css("display","none");
+				$(".starlight > img").css("animation-name","starlightOutimg");
+			});
+		});
 
+	//JEJU DO
+$(function(){
+			"use strict";
+			$(".jejudo").mouseover(function(){
+				$(".jejudoText").css("animation-name","jejudoOver");
+				$(".jejudoText > p").css("animation-name","jejudoOverp");
+				$(".jejudoText > p").css("display","block");
+				$(".jejudo > img").css("animation-name","jejudoOverimg");
+			});
+		});	
+		$(function(){
+			"use strict";
+			$(".jejudo").mouseout(function(){
+				$(".jejudoText").css("animation-name","jejudoOut");
+				$(".jejudoText > p").css("animation-name","jejudoOutp");
+				$(".jejudoText > p").css("display","none");
+				$(".jejudo > img").css("animation-name","jejudoOutimg");
+			});
+		});
+
+	//ILLUST
+$(function(){
+			"use strict";
+			$(".illust").mouseover(function(){
+				$(".illustText").css("animation-name","illustOver");
+				$(".illustText > p").css("animation-name","illustOverp");
+				$(".illustText > p").css("display","block");
+				$(".illust > img").css("animation-name","illustOverimg");
+			});
+		});	
+		$(function(){
+			"use strict";
+			$(".illust").mouseout(function(){
+				$(".illustText").css("animation-name","illustOut");
+				$(".illustText > p").css("animation-name","illustOutp");
+				$(".villustText > p").css("display","none");
+				$(".illust > img").css("animation-name","illustOutimg");
+			});
+		});
 
 
 
